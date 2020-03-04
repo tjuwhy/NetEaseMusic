@@ -18,12 +18,12 @@
 
 * 登录 / 个人歌单列表
 
-![NetEase0](D:\learning_materials\2s\MusicPlayer\NetEase0.png)
+![NetEase0](/NetEase0.png)
 
 * 歌单歌曲列表/播放列表
 
-  ![NetEase2](D:\learning_materials\2s\MusicPlayer\NetEase2.png)
+  ![NetEase2](/NetEase2.png)
 
 * 音乐播放
 
-  ![NetEase1](D:\learning_materials\2s\MusicPlayer\NetEase1.png)
+  ![NetEase1](/NetEase1.png)
