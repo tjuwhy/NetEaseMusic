@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:foreground="@drawable/foreground"
+        android:id="@+id/play_list_cover_bg"
+        android:layout_width="match_parent"
+        android:layout_height="320dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_marginBottom="24dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@id/play_list_cover_bg">
+
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/sky"
+            android:id="@+id/play_list_cover"
+            android:layout_width="108dp"
+            android:layout_height="108dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/icon_arrow_back"
+        android:src="@drawable/ic_arrow_back_white_24dp"
+        android:padding="12dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌单"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/icon_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@id/icon_arrow_back"
+        app:layout_constraintStart_toEndOf="@id/icon_arrow_back"/>
+
+    <TextView
+        android:id="@+id/play_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/card"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/card"
+        />
+
+
+    <stanwang.top.musicplayer.commons.ui.CircleImageView
+        android:id="@+id/play_list_avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toStartOf="@id/play_list_name"
+        app:layout_constraintTop_toBottomOf="@id/play_list_name"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/play_list_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@id/play_list_avatar"
+        app:layout_constraintTop_toTopOf="@id/play_list_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/play_list_avatar"
+        android:layout_marginStart="8dp"
+        android:text="毒死预言家的女巫 >"/>
+
+    <TextView
+        android:text="编辑信息 >"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/play_list_name"
+        app:layout_constraintBottom_toBottomOf="@id/card"/>
+
+
+</android.support.constraint.ConstraintLayout>

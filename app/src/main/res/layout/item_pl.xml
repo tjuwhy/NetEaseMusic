@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:foreground="@drawable/selector_foreground_settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/pl_name"
+        android:textColor="#111111"
+        android:text="成都"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/pl_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - 赵雷"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/pl_name"
+        app:layout_constraintBottom_toBottomOf="@id/pl_name"/>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="12dp"
+        android:src="@drawable/ic_clear_black_24dp"
+        />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,72 @@
+package stanwang.top.musicplayer.personal_list
+
+data class Play(
+        val more: Boolean,
+        val playlist: List<Playlist>,
+        val code: Int
+)
+
+data class Playlist(
+        val subscribers: List<Any>,
+        val subscribed: Boolean,
+        val creator: Creator,
+        val artists: Any,
+        val tracks: Any,
+        val subscribedCount: Int,
+        val cloudTrackCount: Int,
+        val adType: Int,
+        val trackNumberUpdateTime: Long,
+        val createTime: Long,
+        val highQuality: Boolean,
+        val newImported: Boolean,
+        val anonimous: Boolean,
+        val userId: Int,
+        val updateTime: Long,
+        val coverImgId: Long,
+        val commentThreadId: String,
+        val totalDuration: Int,
+        val specialType: Int,
+        val trackCount: Int,
+        val trackUpdateTime: Long,
+        val privacy: Int,
+        val coverImgUrl: String,
+        val playCount: Int,
+        val tags: List<String>,
+        val ordered: Boolean,
+        val description: String,
+        val status: Int,
+        val name: String,
+        val id: String,
+        val coverImgId_str: String
+)
+
+data class Creator(
+        val defaultAvatar: Boolean,
+        val province: Int,
+        val authStatus: Int,
+        val followed: Boolean,
+        val avatarUrl: String,
+        val accountStatus: Int,
+        val gender: Int,
+        val city: Int,
+        val birthday: Long,
+        val userId: Int,
+        val userType: Int,
+        val nickname: String,
+        val signature: String,
+        val description: String,
+        val detailDescription: String,
+        val avatarImgId: Long,
+        val backgroundImgId: Long,
+        val backgroundUrl: String,
+        val authority: Int,
+        val mutual: Boolean,
+        val expertTags: Any,
+        val experts: Any,
+        val djStatus: Int,
+        val vipType: Int,
+        val remarkName: Any,
+        val avatarImgIdStr: String,
+        val backgroundImgIdStr: String,
+        val avatarImgId_str: String
+)
